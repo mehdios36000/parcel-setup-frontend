@@ -1,5 +1,5 @@
 # Introduction
-This is  a quick starter project made and used by me to quickly experiment stuffs when I am trying to replicate cool effects that I see on the web.
+This is  a quick starter project made and used by me to quickly experiment stuff when I am trying to replicate cool effects that I see on the web.
 
 
 # Installation
