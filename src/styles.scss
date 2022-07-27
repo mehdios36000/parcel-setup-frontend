@@ -194,10 +194,9 @@ main{
   }
   
   @media all and (max-width: 768px) {
-    .button_active{
    
-        margin-top: 100px;
-    
+     .button{
+      display: none;
      }
     .card-list {
       /* On small screens, we are no longer using row direction but column */
@@ -208,6 +207,9 @@ main{
     }
     .hero_disclamer{
       font-size: 15px;
+    }
+    .hero_desc_active{
+      margin-top: 100px;
     }
   }
   

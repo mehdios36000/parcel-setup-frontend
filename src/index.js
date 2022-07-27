@@ -1,12 +1,12 @@
 const toggleButton = document.querySelector('.toggle-button');
 const ul= document.querySelector('ul');
-const button= document.getElementsByClassName('button')[1];
+const hero = document.querySelector('.hero_desc');
 
 
 toggleButton.addEventListener('click', () => {
 
     ul.classList.toggle('active');
-    button.classList.toggle('button_active');
+    hero.classList.toggle('hero_desc_active');
 
 
     
