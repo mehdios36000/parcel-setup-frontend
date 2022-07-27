@@ -1,0 +1,236 @@
+@import 'scss/reset';
+@import 'scss/base';
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+@keyframes SlideDown{
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+nav{
+
+  top: 0;
+  height: 100px;
+  margin-left: 51px;
+  margin-right: 56px;
+
+  .container{
+  display: flex;
+  margin-top:20px;
+  align-items: center;
+  justify-content: space-between;
+      
+  }
+  ul{
+    display: flex;
+    align-items:center;
+    gap:20px;
+  }
+  li{
+    color:#29234e;
+    font-size: 20px;
+  }
+ .button{
+    background-color: #29234e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      background-color: #29234e;
+      color: white;
+    }
+ }
+ 
+  .logo{
+    color: #29234e;
+    font-size: 30px;
+  }
+  .mobile-icon{
+    display: none;
+  }
+
+  @media screen and (max-width: 768px){
+    .container{
+       display: flex;
+        flex-direction: column;
+       justify-content: center;
+          
+    }
+   .button{
+    display: none;
+   }
+   .logo{
+    display: none;
+   }
+   ul{
+    display: none;
+
+   }
+   .active{
+    animation: SlideDown 0.5s ease-in;
+    display: block;
+    li{
+      
+      font-size:20px;
+    }
+    
+   }
+  
+    
+   
+  
+.mobile-icon{
+   
+      margin-top: 20px;
+      display: block;
+    }
+   
+  }
+  
+}
+main{
+ 
+  animation: fadeIn 1.5s ease-in;
+  
+  .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    
+  }
+  .button{
+    background-color: #29234e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      background-color: #29234e;
+      color: white;
+    }
+ }
+  .hero_desc{
+    font-size: 70px;
+    font-weight: bold;
+    color: #29234e;
+  }
+  .hero_disclamer{
+    font-size: 20px;
+    color: #29234e;
+    margin-bottom: 20px;
+  }
+  .cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  }
+  
+  @media all and (max-width: 768px) {
+    .button_active{
+   
+        margin-top: 100px;
+    
+     }
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+    .hero_desc{
+      font-size: 20px;
+    }
+    .hero_disclamer{
+      font-size: 15px;
+    }
+  }
+  
+  
+  
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    transition: 0.4s;
+  }
+  
+ 
+   
+}
+
+
+
+
+
